@@ -1,2 +1,8 @@
 import { LightningElement } from 'lwc';
-export default class Repro extends LightningElement {}
+import example from '@salesforce/label/c.example';
+
+export default class Repro extends LightningElement {
+    get value() {
+        return example;
+    }
+}
